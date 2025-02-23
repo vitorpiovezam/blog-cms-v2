@@ -18,7 +18,7 @@ Now we can go to the point, my expedition.
 Two trails, to Dois Rios (already maded by me 3 times), and Dois Rios to the final destination, Parnaioca. Where I pretend to camping 3 days, rest and return.
 
 <p align="middle">
-  <img alt="Planned routed, as described" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/asdsadasd.png" width="90%">
+  <img alt="Planned routed, as described" width="580px" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/asdsadasd.png" width="90%">
 <br>
   <small>Planned Route</small>
 </p>
@@ -76,19 +76,14 @@ Like the name says, (Two Rivers), Dois Rios is a beutiful beach with two rivers 
   <small>Dois Rios sea view</small>
 </p>
 <p align="middle">
-  <img alt="Dois Rios left river" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51904210049_a56387b0c9_o.jpg" width="350px">
+  <img alt="Dois Rios left river" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51903974398_34d99584bf_o.jpg" width="350px">
 <br>
   <small>River on left corner of the beach</small>
 </p>
 <br>
 After this amazing view and good rest on those clean waters, I package all my stuff again and continue to Parnaioca.
 <br>
-<p align="middle">
-  <img alt="Selfie with backpack" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51902923382_149e74bc49_o" width="350px">
-<br>
-  <small>All clear to continue to parnaioca</small>
-</p>
-<br>
+
 ## Stage 2
 
 With soft rain, I`ve started walking to the next destinantion, Parnaioca beach.
@@ -100,25 +95,20 @@ This trail was much more difficult, besides being my first time, it was narrower
 <br>
   <small>Parnaioca trail</small>
 </p>
-<p align="middle">
-  <video controls="true" alt="Selfie with backpack" src="https://r5---sn-bg0eznek.c.drive.google.com/videoplayback?expire=1614576031&ei=X0E8YLOIJZOAlAP5-6aQBQ&ip=2804:431:c7c6:a3e8:89a6:2dc:d7a5:a112&cp=QVRGVkZfVVBRQlhPOl9nUWZTeXlwdVdiV3Z0RVZ5WllfXzdMR2RoUHB1aEpnRWFMQjJXZU1pMW4&id=c86b29d2b5ad3a22&itag=18&source=webdrive&requiressl=yes&sc=yes&ttl=transient&susc=dr&driveid=1rcTxNPOlJEWSXZAj4rKLzHsU5lqJ3_QF&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=14.164&lmt=1614558970854036&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRQIgCUvITL5H9n6kbPO2MqtDTrRpyUTraGDJglROUzLzSYMCIQCm_Dku4ybhyqzgfdMFSaYm4x-Hzgt4ym5qvD6L8C2rqg==&cpn=RVt6aunz7aenvPM1&c=WEB_EMBEDDED_PLAYER&cver=1.20210224.1.0&redirect_counter=1&cm2rm=sn-bg0dk76&req_id=b2d45105f91436e2&cms_redirect=yes&mh=Kd&mm=34&mn=sn-bg0eznek&ms=ltu&mt=1614561391&mv=m&mvi=5&pl=47&lsparams=mh,mm,mn,ms,mv,mvi,pl,sc&lsig=AG3C_xAwRQIhAPVRDdEPBvHGwVDCrmDzkBxa6aP_d_fxHVMCsVU4Q9ttAiA-3XSQB9gM1-Y6mdh3tq1WhY5QiUAo0OrDmSVFWeDLQw%3D%3D" width="350px">
-<br>
-  <small>Parnaioca trail</small>
-</p>
 <br>
 
 And here is the great point of this adventure
-**I`ve get totally lost**
+**I`ve got lost**
 
-Following the trail, I've came up on a downside river, and I can't see the trail continuation. 
-I see a bunch of rocks upstairs, so I started to climb, to get nowhere.
+Following the trail, I've came up on a downside river, and I couldn't see the trail continuation. 
+I saw a bunch of rocks upstairs, so I started to climb, to get nowhere.
 
-When I started to go down to return to the trail, I didn't find it. I arrived at the end of the river, where it fell into the sea and had a good view.
+When I started to go down to return to the trail, I didn't find it. I arrived at the end of the river, where it fell into the sea and had an amazing view.
 
-The moment I concluded that I was lost was very bad, in my mind passed bad things, I remembered my families and friends and started to think in SOS stuff. I had a lignthing to sinalize to the boats, but in 30 minutes no boat passed on my view, and started to get darker. So I left my backpack in downside of the river and started to climb again to find the trail with more calm.
+The moment I concluded that I was lost was very bad, in my mind passed bad things, I remembered my families and friends and started to think in SOS stuff. I had a lignthing to sinalize to the boats, but in 30 minutes no boat passed on my view, and started to get darker. So I left my backpack downside of the river and started to climb again to find the trail.
 <br>
 <p align="middle">
-  <img alt="Sea view" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51904515805_77afb972cc_o" width="350px">
+  <img alt="Sea view" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51903880981_99a9d7cb59_o.jpg" width="500px">
 <br>
   <small>Sea view from rock</small>
 </p>
@@ -129,7 +119,7 @@ The moment I concluded that I was lost was very bad, in my mind passed bad thing
 I spend a lot of energy climbing those rocks.
 <br>
 <p align="middle">
-  <img alt="Sea view" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51903880981_99a9d7cb59_o" width="350px">
+  <img alt="Sea view" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51903880981_99a9d7cb59_o.jpg" width="350px">
 <br>
   <small>My camping place, downside the river</small>
 </p>
@@ -150,19 +140,13 @@ I hadn't thought about it, but camping in the middle of nature is noisy, many an
 **I was weak, tired and hungry.**
 <br>
 <p align="middle">
-  <img alt="Sea view" src="https://pandora-boxx.s3.us-east-1.amazonaws.com/stage3.png" width="350px">
+  <img alt="Sea view" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51902908497_e48cc9fd29_o.jpg" width="350px">
 <br>
   <small>Way back, I was so tired that I cant even turn on GPS, all focused to keep walking</small>
 </p>
 <br>
-This are so far the most challenging moment of my life. In half of the walk, the 4G/GSM signal back to my phone, so I talk to my parents and I was much safer for having an emergency resource.
+This was so far the most challenging moment of my life. In half of the walk, the 4G/GSM signal back to my phone, so I talk to my parents and I was much safer for having an emergency resource.
 <br>
-<br>
-<p align="middle">
-  <img alt="Sea view" src="https://lh3.googleusercontent.com/fife/ABSRlIq77hTUA_FA1YMoKIDurukVpqUhzdZYVDfEv8h8vQwoH1BLNRzvce6XS7bEZmGtOaJQ75orbS0wPUaQsxf1LCB8VfQet6oSVsaVcb-FWJU-MT7CEzXQdAWoBvlzsncBpLcNe48LpfS0c004PR28GRrHmt4JzKlXgpZZ_kZNhxVl0n2u_WNnUotXN4hHVnoPAR_2CZOX-D_X7_JHKj5WkxCeiB7GY4H1Sm29ZredUyqxb-MXCN3fD6K6eBwvXsMMMxcgkKjmt6AQvUGsEuIAO5QFoFIPj1nmM1cLZVra0LeyJHwo7gy7QZcZwn0Az542zAj_4Q9UJUdGBtQJDOZalBRJcvPI5gVd9qXvo7Mi3r5JRKPTMRe8bs_3OmrjFiawM9AqvTYYfRL8hrofswdY1R9e5tMx-fNa9xosXu-Wwndz28C3bHFe7wy0RbMKTPdF1I1pnnL6KR2SrWRMJjSzFO5nkqqRtLokUqPaYgOcry2-u-gnaGWlDMDgaNV6mFPJ6c0h-uyFNKTlYcVZZubQfu-5KlXdFTtDyHLkCE0oQXjNcpbBBLAIn84LeUu-ZTYiZKmA9W75Pio_hygGBCNBf2_ndML_IN2zGLaXQ_hBZEr7q_ZpX24g8jHRFZgGLzKRvPqX2EK7lFOskCuqYnDpfppyY4_iLxSk4qMxSDK4IQ-yeSlPP3NRcC9mB24ge1HFkPo7hAG-JIL7ajiRgeFCzwmXN9W8ikuXIII=w1543-h1288-ft" width="350px">
-<br>
-  <small>Way back, I was so tired that I cant even turn on GPS, all focused to keep walking</small>
-</p>
 <br>
 
 My body started to miss nutrients, I started to sweat too much and lose a lot of liquid.
@@ -179,7 +163,7 @@ I was left with an insatiable hunger for the next few days, and the pain in my l
 
 <br>
 <p align="middle">
-  <img alt="Sea view" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51903948868_5f1ae37d9e_o" width="350px">
+  <img alt="Sea view" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51903948868_5f1ae37d9e_o.jpg" width="350px">
 <br>
   <small>Margueritta Pizza, one of my favorites! </small>
 </p>
@@ -187,7 +171,7 @@ I was left with an insatiable hunger for the next few days, and the pain in my l
 
 <br>
 <p align="middle">
-  <img alt="Sea view" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51904178934_591d52cc0b_o" width="350px">
+  <img alt="Sea view" src="https://s3.us-east-2.amazonaws.com/vitorpiovezam.com/assets/images/51904178934_591d52cc0b_o.jpg" width="350px">
 <br>
   <small>Black beach, this beach is very unusual geologicaly, it's a black volcanic and magnetic sand</small>
 </p>
@@ -198,9 +182,3 @@ I have been in nature, in moments lost, in moments happy. I saw incredible lands
 Was my first trekking, passing one day in wild nature. 
 The best trip of my life.
 
-<p align="middle">
-  <video controls="true" width="80%" alt="Walking on the jungle video" src="https://r4---sn-bg0eznlz.c.drive.google.com/videoplayback?expire=1614576285&ei=XUI8YIiYNI60hwa7v4vwDg&ip=2804:431:c7c6:a3e8:89a6:2dc:d7a5:a112&cp=QVRGVkZfVVJWRlhPOl9nUWZVZGNwdVdiV3Z0R0FjWllfXzdMR2ZtVHB1aEpnRWFORzZXZU1pMW4&id=500a6e996c672771&itag=18&source=webdrive&requiressl=yes&sc=yes&ttl=transient&susc=dr&driveid=1FRmqT6IxM6uPeOKH3rWCi_-dZDnlG7Ua&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=8.870&lmt=1614559240195010&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRQIhAKeJJFI7SffRk94toVL3czNU7GTxpIQj7l1qBeThwyoPAiAg7xyIohaZ9CJwEPmhlZ9C4zUJl6Flya6uUP810O3i_Q==&cpn=QeRStC-iA1xWL35Q&c=WEB_EMBEDDED_PLAYER&cver=1.20210224.1.0&redirect_counter=1&cm2rm=sn-bg0ky7z&req_id=ab193723056236e2&cms_redirect=yes&mh=36&mm=34&mn=sn-bg0eznlz&ms=ltu&mt=1614561632&mv=m&mvi=4&pl=47&lsparams=mh,mm,mn,ms,mv,mvi,pl,sc&lsig=AG3C_xAwRAIgea8bGdW8A3vacvVcAog8qwUDMKx85GFWVgmITiJNiC0CIFifjb5lPeTChqnpxrw3vRubkQEudEODKYODhvaDsS4P" width="350px">
-<br>
-  <small>See you in next time, Ilha Grande 💖</small>
-</p>
-<br>
