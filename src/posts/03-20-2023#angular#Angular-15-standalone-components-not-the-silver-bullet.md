@@ -1,5 +1,5 @@
 <p align="middle">
-  <img src="https://angular.io/assets/images/logos/angular/angular.svg" align="middle" title="Angular" alt="Angular logo" width="120px">
+  <img src="https://angular.dev/assets/icons/logo.svg" align="middle" title="Angular" alt="Angular logo" width="120px">
 </p>
 
 Angular 15, released in November 2022, made **Standalone Components** officially stable. The community went into hype mode. "No more NgModule! Finally!". I get the excitement, but let me give you a more honest take.
@@ -120,6 +120,4 @@ Use standalone if you're starting something small or if the project genuinely fi
 
 NgModule isn't deprecated. It's not going away. It still solves real problems in real projects. The Angular team making standalone the default in the CLI doesn't mean it's the right fit for every application in existence.
 
-Know your context. Choose accordingly.
-
-Reach me on [twitter](https://www.twitter.com/vitorpiovezam) if you disagree 🤙
+Know your context and choose accordingly.

@@ -5,6 +5,9 @@ var removeMd = require('@azu/remove-markdown');
 export class PostService {
   posts: Post[] = [];
   filesPath = 'src/posts';
+  titleOverrides: Record<string, string> = {
+    'angular-15-standalone-components-not-the-silver-bullet': 'Angular 15 standalone components',
+  };
 
   private async refreshPostsFromBucket() {
     const exec = require('child_process').exec;
@@ -28,6 +31,23 @@ export class PostService {
     return textPreview;
   }
 
+  private getTitleFromFilename(filename: string): string {
+    const slug = this.applyRegexAndVerifyIfExists(filename, /[^#]*$/)
+      .slice(0, -3)
+      .toLocaleLowerCase();
+
+    if (this.titleOverrides[slug]) {
+      return this.titleOverrides[slug];
+    }
+
+    const rawTitle = this.applyRegexAndVerifyIfExists(filename, /[^#]*$/)
+      .replace(/-/g, ' ')
+      .slice(0, -3)
+      .toLocaleLowerCase();
+
+    return rawTitle.charAt(0).toUpperCase() + rawTitle.slice(1);
+  }
+
   public async getAllPosts() {
     await this.refreshPostsFromBucket();
     const posts = [] as Post[];
@@ -38,8 +58,7 @@ export class PostService {
       console.log(filename)
       const post: Post = {
         slug: this.applyRegexAndVerifyIfExists(filename, /[^#]*$/).toLocaleLowerCase(),
-        title: this.applyRegexAndVerifyIfExists(filename, /[^#]*$/).replace(/-/g, ' ')
-        .slice(0, -3),
+        title: this.getTitleFromFilename(filename),
         type: this.applyRegexAndVerifyIfExists(filename, /(['#])(?:(?=(\\?))\2.)+\1/).replace(/#/g, ' '),
         post: markdown,
         textPreview: this.getPreview(markdown),

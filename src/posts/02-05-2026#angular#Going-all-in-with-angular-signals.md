@@ -2,37 +2,27 @@
   <img src="https://angular.dev/assets/icons/logo.svg" align="middle" title="Angular" alt="Angular logo" width="120px">
 </p>
 
-I wrote about Angular Signals back in 2023 when they were still in developer preview. A lot has changed since then. Signals are now fully stable, we have signal-based inputs and outputs, and I've been using them in real production projects for over a year now. Time to do a proper write-up.
+Angular Signals is finally stable. We now have signal-based inputs and outputs, zoneless mode is stable, and the whole component model feels much more cohesive than it did in the early releases.
 
 ## The full signal-based component
 
-When Angular 17 landed with stable signals, and then 18 and 19 continued iterating on them, the component model changed significantly. Here's what a modern Angular component looks like today:
+The component model changed significantly. Here's what a modern Angular component looks like today:
 
 ```typescript
-import { Component, signal, computed, input, output } from '@angular/core';
+import { Component, computed, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-product-card',
   standalone: true,
   template: `
-    <div class="card">
-      <h2>{{ product().name }}</h2>
-      <p>Price: {{ formattedPrice() }}</p>
-      <p>Stock: {{ product().stock > 0 ? 'Available' : 'Out of stock' }}</p>
-      <button (click)="addToCart.emit(product())" [disabled]="product().stock === 0">
-        Add to cart
-      </button>
-    </div>
+    <h2>{{ product().name }}</h2>
+    <button (click)="addToCart.emit(product())">Add to cart</button>
   `
 })
 export class ProductCardComponent {
   product = input.required<Product>();
   addToCart = output<Product>();
-
-  formattedPrice = computed(() =>
-    new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
-      .format(this.product().price)
-  );
+  label = computed(() => this.product().name.toUpperCase());
 }
 ```
 
@@ -43,21 +33,15 @@ export class ProductCardComponent {
 For component state, signals replaced almost all my uses of local variables combined with `markForCheck()` or `detectChanges()`. Before I'd do things like:
 
 ```typescript
-// Before - hard to track what triggers CD
 export class OldComponent implements OnInit {
-  items: Item[] = [];
   loading = false;
-  error: string | null = null;
+  items: Item[] = [];
 
   ngOnInit() {
     this.loading = true;
     this.service.getItems().subscribe({
       next: items => {
         this.items = items;
-        this.loading = false;
-      },
-      error: err => {
-        this.error = err.message;
         this.loading = false;
       }
     });
@@ -68,15 +52,13 @@ export class OldComponent implements OnInit {
 Now with signals:
 
 ```typescript
-import { Component, signal, computed, inject, OnInit } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { Component, signal, computed, inject } from '@angular/core';
 
 export class NewComponent {
   private service = inject(ItemService);
 
   items = signal<Item[]>([]);
   loading = signal(false);
-  error = signal<string | null>(null);
 
   hasItems = computed(() => this.items().length > 0);
 
@@ -86,17 +68,13 @@ export class NewComponent {
       next: items => {
         this.items.set(items);
         this.loading.set(false);
-      },
-      error: err => {
-        this.error.set(err.message);
-        this.loading.set(false);
       }
     });
   }
 }
 ```
 
-The template can now react to `loading()`, `items()`, `error()` and `hasItems()` precisely. Angular only updates the DOM nodes that actually depend on a changed signal.
+The template can now react to `loading()`, `items()` and `hasItems()` precisely. Angular only updates the DOM nodes that actually depend on a changed signal.
 
 ## model() — two-way binding the right way
 
@@ -117,9 +95,7 @@ import { Component, model } from '@angular/core';
 export class ToggleComponent {
   checked = model(false);
 
-  toggle() {
-    this.checked.update(v => !v);
-  }
+  toggle() { this.checked.update(v => !v); }
 }
 ```
 
@@ -133,16 +109,14 @@ Two-way binding, but clean. No need for `EventEmitter` + `@Output` + manually na
 
 ## Zoneless Angular
 
-The big thing in Angular 19 is that zoneless mode is now stable and I've been running a couple of apps without Zone.js. The bundle size reduction is real — around 20-30kb less in production builds depending on your setup.
+The big thing in Angular 19 is that zoneless mode is now stable and I've been running apps without Zone.js. The bundle size reduction is real.
 
 To enable it:
 
 ```typescript
 // main.ts
 bootstrapApplication(AppComponent, {
-  providers: [
-    provideExperimentalZonelessChangeDetection()
-  ]
+  providers: [provideExperimentalZonelessChangeDetection()]
 });
 ```
 
@@ -157,13 +131,9 @@ Even going all-in on signals, I haven't abandoned RxJS. HTTP calls, WebSocket st
 ```typescript
 export class SearchComponent {
   private http = inject(HttpClient);
-
   query = signal('');
-
   results = toSignal(
     toObservable(this.query).pipe(
-      debounceTime(300),
-      distinctUntilChanged(),
       switchMap(q => q ? this.http.get<Result[]>(`/api/search?q=${q}`) : of([]))
     ),
     { initialValue: [] }
