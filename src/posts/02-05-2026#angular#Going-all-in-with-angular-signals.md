@@ -9,7 +9,7 @@ Angular Signals is finally stable. We now have signal-based inputs and outputs, 
 The component model changed significantly. Here's what a modern Angular component looks like today:
 
 ```typescript
-import { Component, computed, input, output } from '@angular/core';
+import { Component, computed, input, output, signal } from '@angular/core';
 
 @Component({
   selector: 'app-product-card',
@@ -22,6 +22,7 @@ import { Component, computed, input, output } from '@angular/core';
 export class ProductCardComponent {
   product = input.required<Product>();
   addToCart = output<Product>();
+  quantity = signal(1);
   label = computed(() => this.product().name.toUpperCase());
 }
 ```
