@@ -2,12 +2,11 @@ package libs
 
 import (
 	"encoding/json"
-
 	"github.com/aws/aws-lambda-go/events"
 )
 
 var corsHeaders = map[string]string{
-	"Access-Control-Allow-Origin":  "*",
+	"Access-Control-Allow-Origin": "*",
 	"Access-Control-Allow-Headers": "Content-Type",
 	"Access-Control-Allow-Methods": "GET, OPTIONS",
 }
@@ -16,8 +15,8 @@ func Response(statusCode int, body any) events.APIGatewayProxyResponse {
 	b, _ := json.Marshal(body)
 	return events.APIGatewayProxyResponse{
 		StatusCode: statusCode,
-		Body:       string(b),
-		Headers:    corsHeaders,
+		Body: string(b),
+		Headers: corsHeaders,
 	}
 }
 

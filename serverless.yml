@@ -13,7 +13,6 @@ provider:
     minimumCompressionSize: 1024
     shouldStartNameWithService: true
   environment:
-    POSTS_BUCKET: vitorpiovezam.dev-posts
     POSTS_PATH: src/posts
 
 # Both functions share the same pre-built zip (see `make package`).
