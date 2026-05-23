@@ -1,7 +1,3 @@
-# Node
-node_modules
-package-lock.json
-
 # Serverless deploy artifacts
 .serverless
 
@@ -10,3 +6,4 @@ package-lock.json
 
 # Stray binary — Go outputs module-name binary when `go build .` runs without -o
 blog-cms-v2
+node_modules

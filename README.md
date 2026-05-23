@@ -1,22 +1,36 @@
 # blog-cms-v2
-## Serverless v3 - AWS Node.js Typescript
+## Serverless v3 - AWS Lambda (Go)
 
-This project has been generated using the `aws-nodejs-typescript` template from the [Serverless framework](https://www.serverless.com/).
+Blog API deployed with the [Serverless framework](https://www.serverless.com/). Handlers are written in Go and run on Lambda with the `provided.al2023` runtime.
 
 For detailed instructions, please refer to the [documentation](https://www.serverless.com/framework/docs/providers/aws/).
 
 ## Installation/deployment instructions
 
-Depending on your preferred package manager, follow the instructions below to deploy your project.
+Follow the steps below to run locally or deploy to AWS.
 
-> **Requirements**: NodeJS `(v.20.x)`. If you're using [nvm](https://github.com/nvm-sh/nvm), run `nvm use` to ensure you're using the same Node version in local and in your lambda's runtime.
+> **Requirements**: Go `(1.23+)`, Python 3 (for packaging), and the [Serverless CLI](https://www.serverless.com/framework/docs/getting-started) installed globally. AWS CLI credentials configured for deploy.
 
-### Using NPM
+### Setup
 
-- Run `npm i` to install the project dependencies
-- Run `npx sls deploy` to deploy this stack to AWS
+- Run `make setup` to fetch Go dependencies
 
-### Using Yarn
+### Local development
 
-- Run `yarn` to install the project dependencies
-- Run `yarn sls deploy` to deploy this stack to AWS
+- Run `make serve` to start the API on `http://localhost:3000`
+- `make offline` is an alias for `make serve`
+
+Endpoints:
+
+- `GET http://localhost:3000/dev/posts`
+- `GET http://localhost:3000/dev/post/{slug}`
+
+### Deploy
+
+- Run `make deploy` to build, package, and deploy to AWS
+
+### Other commands
+
+- `make build` — compile the Linux binary
+- `make package` — build + create the deployment zip
+- `make clean` — remove build artifacts

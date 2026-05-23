@@ -5,13 +5,11 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"os/exec"
 	"path/filepath"
 	"regexp"
 	"sort"
 	"strings"
 	"time"
-
 	"blog-cms-v2/src/definitions"
 )
 
@@ -21,38 +19,18 @@ var titleOverrides = map[string]string{
 
 type PostService struct {
 	postsPath string
-	s3Bucket  string
-	offline   bool
 }
 
 func NewPostService() *PostService {
-	return &PostService{
-		postsPath: envOrDefault("POSTS_PATH", "src/posts"),
-		s3Bucket:  envOrDefault("POSTS_BUCKET", "vitorpiovezam.dev-posts"),
-		offline:   os.Getenv("IS_OFFLINE") == "true" || os.Getenv("SERVE_LOCAL") == "true",
+	postsPath := os.Getenv("POSTS_PATH")
+	if postsPath == "" {
+		postsPath = "src/posts"
 	}
-}
-
-func envOrDefault(key, fallback string) string {
-	if v := os.Getenv(key); v != "" {
-		return v
-	}
-	return fallback
+	return &PostService{postsPath: postsPath}
 }
 
 func (s *PostService) GetAllPosts(ctx context.Context) ([]definitions.Post, error) {
-	readPath := s.postsPath
-
-	if !s.offline {
-		synced, err := s.refreshPostsFromBucket(ctx)
-		if err != nil {
-			log.Printf("s3 sync skipped (non-fatal): %v", err)
-		} else {
-			readPath = synced
-		}
-	}
-
-	return s.readPosts(readPath)
+	return s.readPosts(s.postsPath)
 }
 
 func (s *PostService) GetPostBySlug(ctx context.Context, slug string) (*definitions.Post, error) {
@@ -66,20 +44,6 @@ func (s *PostService) GetPostBySlug(ctx context.Context, slug string) (*definiti
 		}
 	}
 	return nil, nil
-}
-
-func (s *PostService) refreshPostsFromBucket(ctx context.Context) (string, error) {
-	dest := "/tmp/posts"
-	if err := os.MkdirAll(dest, 0o755); err != nil {
-		return "", fmt.Errorf("mkdir %s: %w", dest, err)
-	}
-	cmd := exec.CommandContext(ctx, "aws", "s3", "sync", "s3://"+s.s3Bucket, dest)
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-	if err := cmd.Run(); err != nil {
-		return "", fmt.Errorf("aws s3 sync: %w", err)
-	}
-	return dest, nil
 }
 
 func (s *PostService) readPosts(dir string) ([]definitions.Post, error) {
@@ -107,7 +71,6 @@ func (s *PostService) readPosts(dir string) ([]definitions.Post, error) {
 	return posts, nil
 }
 
-// parsePost parses a filename with the convention MM-DD-YYYY#type#Slug-Title.md.
 func parsePost(fullPath, filename string) (definitions.Post, error) {
 	parts := strings.SplitN(filename, "#", 3)
 	if len(parts) != 3 {
@@ -129,12 +92,12 @@ func parsePost(fullPath, filename string) (definitions.Post, error) {
 	}
 
 	return definitions.Post{
-		Slug:        slug,
-		Title:       title,
-		Type:        " " + parts[1] + " ",
-		Post:        string(content),
+		Slug: slug,
+		Title: title,
+		Type: " " + parts[1] + " ",
+		Post: string(content),
 		TextPreview: makePreview(string(content), 150),
-		PostDate:    postDate,
+		PostDate: postDate,
 	}, nil
 }
 
@@ -153,14 +116,14 @@ func deriveTitle(rawSlug string) string {
 var (
 	reFencedCode = regexp.MustCompile("(?s)```[^`]*```")
 	reInlineCode = regexp.MustCompile("`[^`]+`")
-	reHTMLTag    = regexp.MustCompile(`<[^>]+>`)
-	reImage      = regexp.MustCompile(`!\[[^\]]*\]\([^)]*\)`)
-	reLinkText   = regexp.MustCompile(`\[([^\]]*)\]\([^)]*\)`)
-	reHeading    = regexp.MustCompile(`(?m)^#{1,6}\s+`)
-	reBold       = regexp.MustCompile(`\*{1,3}([^*]+)\*{1,3}`)
-	reItalic     = regexp.MustCompile(`_{1,2}([^_]+)_{1,2}`)
+	reHTMLTag = regexp.MustCompile(`<[^>]+>`)
+	reImage = regexp.MustCompile(`!\[[^\]]*\]\([^)]*\)`)
+	reLinkText = regexp.MustCompile(`\[([^\]]*)\]\([^)]*\)`)
+	reHeading = regexp.MustCompile(`(?m)^#{1,6}\s+`)
+	reBold = regexp.MustCompile(`\*{1,3}([^*]+)\*{1,3}`)
+	reItalic = regexp.MustCompile(`_{1,2}([^_]+)_{1,2}`)
 	reBlockquote = regexp.MustCompile(`(?m)^>\s+`)
-	reHRule      = regexp.MustCompile(`(?m)^[-*_]{3,}\s*$`)
+	reHRule = regexp.MustCompile(`(?m)^[-*_]{3,}\s*$`)
 )
 
 func makePreview(markdown string, limit int) string {

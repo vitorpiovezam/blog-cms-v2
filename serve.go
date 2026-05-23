@@ -6,14 +6,16 @@ import (
 	"log"
 	"net/http"
 	"os"
-
 	"blog-cms-v2/src/libs"
 )
 
 func runHTTPServer() {
-	port := envOrDefault("PORT", "3000")
-	mux := http.NewServeMux()
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3000"
+	}
 
+	mux := http.NewServeMux()
 	mux.HandleFunc("GET /dev/posts", httpGetAllPosts)
 	mux.HandleFunc("GET /dev/post/{slug}", httpGetPostBySlug)
 
@@ -64,11 +66,4 @@ func writeJSON(w http.ResponseWriter, status int, body any) {
 
 func errMap(err error) map[string]string {
 	return map[string]string{"error": err.Error()}
-}
-
-func envOrDefault(key, fallback string) string {
-	if v := os.Getenv(key); v != "" {
-		return v
-	}
-	return fallback
 }
