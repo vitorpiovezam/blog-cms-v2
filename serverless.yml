@@ -1,0 +1,45 @@
+service: blog-cms-v2
+frameworkVersion: '3'
+
+# Local development: `make serve`  (native Go HTTP server, :3000)
+# Deploy:           `make deploy`
+
+provider:
+  name: aws
+  runtime: provided.al2023
+  region: us-east-1
+  architecture: x86_64
+  apiGateway:
+    minimumCompressionSize: 1024
+    shouldStartNameWithService: true
+  environment:
+    POSTS_BUCKET: vitorpiovezam.dev-posts
+    POSTS_PATH: src/posts
+
+# Both functions share the same pre-built zip (see `make package`).
+# The zip contains:
+#   bootstrap    — single Go binary; main() routes by AWS_LAMBDA_FUNCTION_NAME
+#   src/posts/   — bundled markdown (cold-start fallback before S3 sync)
+package:
+  individually: true
+
+functions:
+  getAllPosts:
+    handler: bootstrap
+    package:
+      artifact: .bin/bootstrap.zip
+    events:
+      - http:
+          method: GET
+          path: /posts
+          cors: true
+
+  getPostBySlug:
+    handler: bootstrap
+    package:
+      artifact: .bin/bootstrap.zip
+    events:
+      - http:
+          method: GET
+          path: /post/{slug}
+          cors: true

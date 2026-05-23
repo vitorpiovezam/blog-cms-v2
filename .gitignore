@@ -1,9 +1,12 @@
-# package directories
+# Node
 node_modules
-jspm_packages
+package-lock.json
 
-# Serverless directories
+# Serverless deploy artifacts
 .serverless
 
-# esbuild directories
-.esbuild
+# Go build artifacts (make build / make package)
+.bin
+
+# Stray binary — Go outputs module-name binary when `go build .` runs without -o
+blog-cms-v2
