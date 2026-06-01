@@ -40,6 +40,15 @@ def main():
                 if fname.endswith(".md"):
                     zf.write(os.path.join(POSTS, fname), os.path.join("src", "posts", fname))
 
+        # bundle static assets used by posts
+        assets = "src/assets"
+        if os.path.isdir(assets):
+            for root, _, files in os.walk(assets):
+                for fname in files:
+                    full = os.path.join(root, fname)
+                    arc = full.replace(os.sep, "/")
+                    zf.write(full, arc)
+
     print(f"✓ {OUT}")
 
 

@@ -16,6 +16,7 @@ import (
 
 var titleOverrides = map[string]string{
 	"angular-15-standalone-components-not-the-silver-bullet": "Angular 15 standalone components",
+	"from-theremin-to-pancadao-a-quick-timeline-of-electronic-music": "From Theremin to \"pancadão\": a quick timeline of electronic music",
 }
 
 type PostService struct {
