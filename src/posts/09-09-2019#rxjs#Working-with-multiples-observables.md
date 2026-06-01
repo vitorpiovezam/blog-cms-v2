@@ -1,6 +1,4 @@
-<p align="middle">
-<img src="https://rxjs-dev.firebaseapp.com/assets/images/favicons/favicon-192x192.png" align="middle" title="rxJS" alt="Logo rxJs">
-</p>
+![RxJS](https://rxjs.dev/generated/images/marketing/home/Rx_Logo-512-512.png)
 Working with reactive programming, sometimes we need more than one service, to perform a certain function or render something on the screen.
 
 When we call a service that returns an observable, we can treat it individually the way we want it. In situations where more than one observable treatment is required we can use forkJoin.
