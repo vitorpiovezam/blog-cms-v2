@@ -25,3 +25,11 @@ setup:
 
 clean:
 	rm -rf $(BIN)
+
+# Interactively review and approve pending comments from DynamoDB.
+# Usage: make approve-comments [PROFILE=thali] [TABLE=blog-comments] [REGION=us-east-1]
+approve-comments:
+	go run ./scripts/approve-comments \
+		--profile $(or $(PROFILE),default) \
+		--table   $(or $(TABLE),blog-comments) \
+		--region  $(or $(REGION),us-east-1)
