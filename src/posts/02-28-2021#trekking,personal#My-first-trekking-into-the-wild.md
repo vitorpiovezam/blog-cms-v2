@@ -46,8 +46,8 @@ When I arrived in the island, I imediatelly started my journey to Dois Rios.
 <br>
 
 <p align="middle">
-  <a href="https://www.strava.com/activities/4799661287" target="_blank" class="strava-card">
-    <img src="https://strava-embeds.com/activity/4799661287" alt="Strava activity: Stage 1 — Vila do Abraão to Dois Rios" style="max-width:100%;border-radius:8px;" onerror="this.parentElement.innerHTML='<div style=\'text-align:center;padding:20px;border:1px solid #ddd;border-radius:8px\'><strong>🏃 Strava: Stage 1 — Vila do Abraão → Dois Rios</strong><br><a href=\'https://www.strava.com/activities/4799661287\' target=\'_blank\' style=\'color:#fc4c02\'>View on Strava ↗</a></div>'"/>
+  <a href="https://www.strava.com/activities/4799661287" target="_blank">
+    <img src="https://strava-embeds.com/activity/4799661287" alt="Strava: Stage 1 — Vila do Abraão to Dois Rios" style="max-width:590px;width:100%;"/>
   </a>
 </p>
 Climbing the 780 meters of altitude on the first trail, I started to sweat too much, due to the 15kg backpack I carried on my back, containing all the camping material, some food and 4l of water.
@@ -131,7 +131,7 @@ The GPS tracking shows the place I losted the trail.
 <br>
 <p align="middle">
   <a href="https://www.strava.com/activities/4799659624" target="_blank">
-    <img src="https://strava-embeds.com/activity/4799659624" alt="Strava: Stage 2 — GPS showing where I got lost" style="max-width:100%;border-radius:8px;" onerror="this.parentElement.innerHTML='<div style=\'text-align:center;padding:20px;border:1px solid #ddd;border-radius:8px\'><strong>🏃 Strava: Stage 2 — GPS tracking where I got lost</strong><br><a href=\'https://www.strava.com/activities/4799659624\' target=\'_blank\' style=\'color:#fc4c02\'>View on Strava ↗</a></div>'"/>
+    <img src="https://strava-embeds.com/activity/4799659624" alt="Strava: Stage 2 — GPS tracking where I got lost" style="max-width:590px;width:100%;"/>
   </a>
 </p>
 
