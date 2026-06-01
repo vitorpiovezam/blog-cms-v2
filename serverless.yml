@@ -1,9 +1,6 @@
 service: blog-cms-v2
 frameworkVersion: '3'
 
-# Local development: `make serve`  (native Go HTTP server, :3000)
-# Deploy:           `make deploy`
-
 provider:
   name: aws
   runtime: provided.al2023
@@ -14,11 +11,18 @@ provider:
     shouldStartNameWithService: true
   environment:
     POSTS_PATH: src/posts
+    COMMENTS_TABLE: blog-comments
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:Query
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+          Resource:
+            - !GetAtt CommentsTable.Arn
 
-# Both functions share the same pre-built zip (see `make package`).
-# The zip contains:
-#   bootstrap    — single Go binary; main() routes by AWS_LAMBDA_FUNCTION_NAME
-#   src/posts/   — bundled markdown (cold-start fallback before S3 sync)
 package:
   individually: true
 
@@ -42,3 +46,51 @@ functions:
           method: GET
           path: /post/{slug}
           cors: true
+
+  getComments:
+    handler: bootstrap
+    package:
+      artifact: .bin/bootstrap.zip
+    events:
+      - http:
+          method: GET
+          path: /post/{slug}/comments
+          cors: true
+
+  postComment:
+    handler: bootstrap
+    package:
+      artifact: .bin/bootstrap.zip
+    events:
+      - http:
+          method: POST
+          path: /post/{slug}/comments
+          cors: true
+
+  recommendComment:
+    handler: bootstrap
+    package:
+      artifact: .bin/bootstrap.zip
+    events:
+      - http:
+          method: POST
+          path: /post/{slug}/comments/{commentId}/recommend
+          cors: true
+
+resources:
+  Resources:
+    CommentsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: blog-comments
+        BillingMode: PAY_PER_REQUEST
+        AttributeDefinitions:
+          - AttributeName: slug
+            AttributeType: S
+          - AttributeName: commentId
+            AttributeType: S
+        KeySchema:
+          - AttributeName: slug
+            KeyType: HASH
+          - AttributeName: commentId
+            KeyType: RANGE

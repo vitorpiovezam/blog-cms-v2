@@ -8,6 +8,7 @@ import (
 	"path/filepath"
 	"regexp"
 	"sort"
+	"strconv"
 	"strings"
 	"time"
 	"blog-cms-v2/src/definitions"
@@ -91,13 +92,20 @@ func parsePost(fullPath, filename string) (definitions.Post, error) {
 		return definitions.Post{}, fmt.Errorf("reading %s: %w", filename, err)
 	}
 
+	tags := strings.Split(parts[1], ",")
+	for i := range tags {
+		tags[i] = strings.TrimSpace(tags[i])
+	}
+
 	return definitions.Post{
-		Slug: slug,
-		Title: title,
-		Type: " " + parts[1] + " ",
-		Post: string(content),
+		Slug:       slug,
+		Title:      title,
+		Tags:       tags,
+		Type:       " " + tags[0] + " ",
+		Post:       string(content),
 		TextPreview: makePreview(string(content), 150),
-		PostDate: postDate,
+		FirstImage: extractBestImage(string(content)),
+		PostDate:   postDate,
 	}, nil
 }
 
@@ -125,6 +133,71 @@ var (
 	reBlockquote = regexp.MustCompile(`(?m)^>\s+`)
 	reHRule = regexp.MustCompile(`(?m)^[-*_]{3,}\s*$`)
 )
+
+var (
+	reExtractImg     = regexp.MustCompile(`!\[[^\]]*\]\(([^)]+)\)`)
+	reExtractImgHTML  = regexp.MustCompile(`<img[^>]+src=["']([^"']+)["'][^>]*>`)
+	reImgWidth        = regexp.MustCompile(`(?i)width[=:]["']?(\d+)`)
+)
+
+func extractBestImage(content string) string {
+	bestURL := ""
+	bestScore := -1
+
+	for _, m := range reExtractImg.FindAllStringSubmatch(content, -1) {
+		if len(m) < 2 {
+			continue
+		}
+		if s := scoreImageURL(m[1], ""); s > bestScore {
+			bestScore = s
+			bestURL = m[1]
+		}
+	}
+	for _, m := range reExtractImgHTML.FindAllStringSubmatch(content, -1) {
+		if len(m) < 2 {
+			continue
+		}
+		tag := m[0]
+		if s := scoreImageURL(m[1], tag); s > bestScore {
+			bestScore = s
+			bestURL = m[1]
+		}
+	}
+	return bestURL
+}
+
+func scoreImageURL(url, tag string) int {
+	score := 100
+	lower := strings.ToLower(url)
+
+	if w := reImgWidth.FindStringSubmatch(tag); len(w) > 1 {
+		if n, err := strconv.Atoi(w[1]); err == nil {
+			score += n
+		}
+	}
+
+	switch {
+	case strings.Contains(lower, "favicon"), strings.Contains(lower, "icon-"), strings.Contains(lower, "192x192"):
+		score -= 400
+	case strings.Contains(lower, "_o."), strings.Contains(lower, "/o."):
+		score += 800
+	case strings.Contains(lower, "_b."), strings.Contains(lower, "_k."):
+		score += 600
+	case strings.Contains(lower, "_z."):
+		score += 350
+	case strings.Contains(lower, "_w."), strings.Contains(lower, "_c."):
+		score += 200
+	}
+
+	if strings.Contains(lower, "upload.wikimedia.org") {
+		score += 500
+	}
+	if strings.Contains(lower, "angular.dev") || strings.Contains(lower, "s3.") {
+		score += 300
+	}
+
+	return score
+}
 
 func makePreview(markdown string, limit int) string {
 	s := reFencedCode.ReplaceAllString(markdown, "")

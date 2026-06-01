@@ -17,6 +17,12 @@ func main() {
 	switch os.Getenv("AWS_LAMBDA_FUNCTION_NAME") {
 	case "blog-cms-v2-dev-getAllPosts":
 		lambda.Start(functions.GetAllPosts)
+	case "blog-cms-v2-dev-getComments":
+		lambda.Start(functions.GetComments)
+	case "blog-cms-v2-dev-postComment":
+		lambda.Start(functions.PostComment)
+	case "blog-cms-v2-dev-recommendComment":
+		lambda.Start(functions.RecommendComment)
 	default:
 		lambda.Start(functions.GetPostBySlug)
 	}
