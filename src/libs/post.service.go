@@ -140,9 +140,11 @@ var (
 	reImgWidth        = regexp.MustCompile(`(?i)width[=:]["']?(\d+)`)
 )
 
+const minImageScore = 50 // reject favicons and tiny icons (score ≤ 0 after penalties)
+
 func extractBestImage(content string) string {
 	bestURL := ""
-	bestScore := -1
+	bestScore := minImageScore - 1
 
 	for _, m := range reExtractImg.FindAllStringSubmatch(content, -1) {
 		if len(m) < 2 {
