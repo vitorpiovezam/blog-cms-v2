@@ -1,4 +1,4 @@
-![Angular 15 standalone components](https://angular.dev/assets/images/press-kit/angular_wordmark_gradient.png)
+![Angular 15 standalone components](https://upload.wikimedia.org/wikipedia/commons/6/67/Angular_gradient_logo.png)
 
 Angular 15, released in November 2022, made **Standalone Components** officially stable. The community went into hype mode. "No more NgModule! Finally!". I get the excitement, but let me give you a more honest take.
 
