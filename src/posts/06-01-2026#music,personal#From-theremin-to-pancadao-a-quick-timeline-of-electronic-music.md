@@ -136,9 +136,9 @@ I think I like artists like TSHA and Sylvan Esso for the same reason I like Kraf
 
 ## That's all
 
-Liked the article? I love this topic, I love listening to these songs, and I wanted to share this amazing piece of history. Each band, each member I mentioned here could fill a full article on their own. Especially the YMO members, who have amazing solo careers. You can dig by yourself on the web, or leave a comment saying what you liked most and what you want to read more about. I would be happy to write more about this topic.
+Liked the article? This topic runs deep—these songs never get old, and this history felt worth sharing. Each band, each member mentioned here could fill a full article on their own. Especially the YMO members, who have amazing solo careers. Feel free to dig around on the web, or leave a comment saying what you liked most and what you'd want to read more about. There's plenty more to write on this subject.
 
-Thirty-five years after the atomic attack on Japan, I leave you with YMO making the Black community in the US dance. For me, it is a symbol of union and happiness despite all the losses of war—cultural differences broken down by the power of good music.
+Thirty-five years after the atomic attack on Japan, here's YMO making the Black community in the US dance. A symbol of union and happiness despite all the losses of war—cultural differences broken down by the power of good music.
 
 <p align="middle">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/oBpP3OCNyTA" title="YMO On Soultrain" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
