@@ -58,6 +58,12 @@ The rail becomes sequence. The locomotive becomes beat. The trip becomes loop.
   <small>A Trans Europ Express train: the perfect image to understand Kraftwerk's mechanical pulse.</small>
 </p>
 
+<p align="middle">
+  <div class="blog-audio-player" data-title="Kraftwerk — Trans-Europe Express" data-src="/assets/blog/audio/trans-europe-express.mp3"></div>
+<br>
+  <small>Kraftwerk — Trans-Europe Express.</small>
+</p>
+
 And here there is a beautiful detail for Brazilian music history: the beat of today's funk carioca has an ancestry that passes through this imagination of rails, engines and machines.
 
 It is not that funk was literally born inside a German train. That would be too simplistic. But the rhythmic cell Kraftwerk put into the world with "Trans-Europe Express" traveled. It landed in hip-hop DJs' hands, became a foundation for "Planet Rock", entered electro, passed through Miami Bass and reached Rio's bailes, where it was remade, accelerated, Brazilianized, sweated out.
@@ -111,12 +117,6 @@ I think I like artists like TSHA and Sylvan Esso for the same reason I like Kraf
 ## To hear the thread
 
 <p align="middle">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/zOfh7YdugzQ" title="Kraftwerk - Trans Europa Express" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br>
-  <small>Kraftwerk - Trans Europa Express. The train as beat.</small>
-</p>
-
-<p align="middle">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/GPuBOYsl--M" title="Ryuichi Sakamoto - Riot in Lagos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br>
   <small>Ryuichi Sakamoto - Riot in Lagos. An absurd bridge between the 808, electro and the future.</small>
@@ -133,3 +133,15 @@ I think I like artists like TSHA and Sylvan Esso for the same reason I like Kraf
 <br>
   <small>TSHA — Demba (feat. Trio Da Kali). Elegant, human, and genuinely moving.</small>
 </p>
+
+## That's all
+
+Liked the article? I love this topic, I love listening to these songs, and I wanted to share this amazing piece of history. Each band, each member I mentioned here could fill a full article on their own. Especially the YMO members, who have amazing solo careers. You can dig by yourself on the web, or leave a comment saying what you liked most and what you want to read more about. I would be happy to write more about this topic.
+
+Thirty-five years after the atomic attack on Japan, I leave you with YMO making the Black community in the US dance. For me, it is a symbol of union and happiness despite all the losses of war—cultural differences broken down by the power of good music.
+
+<p align="middle">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/oBpP3OCNyTA" title="YMO On Soultrain" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+Thanks for reading :)
