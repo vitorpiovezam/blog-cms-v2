@@ -107,8 +107,7 @@ The rest of the thread still holds: Theremin in the laboratory, Kraftwerk as col
 
 Here is where my view gets pessimistic. A lot of mainstream electronic music today feels less like music culture and more like a consumption machine. I went to XXXExperience rave-party in 2022, thinking that would be an experience to watch the electronic new tendencies. And I just saw drug excess, too many repeated tracks from the same USB-stick logic, very few artists actually doing something great. Sometimes the mainstream festival circuit feels like a market built around people consuming drugs while a predictable soundtrack keeps the machine running.
 
-Funny detail: my friends were waiting for Timmy Trumpet, this guy who supposedly plays trumpet on his tracks. Guess what—the trumpet was pure theater. Not a single damn microphone anywhere near the instrument.
-
+Funny detail: my friends were waiting for some guy called Timmy Trumpet, this guy who supposedly plays trumpet on his tracks. Guess what—the trumpet was pure theater. Not a single damn microphone anywhere near the instrument.
 
 Real electronic music still exists, but you need to dig for it. TSHA, for example, makes electronic/house music with taste, space and feeling. "Demba", with Trio Da Kali, has that rare thing of sounding modern without becoming empty. There was also a movement called Future bass, that moves away from the aggressive dubstep formula, much more melodic and emotional. In Brazil, Ecologyk is a very good producer, that makes trap music also. And Sylvan Esso are among my favorites because they keep things minimal, physical and alive.
 
@@ -131,7 +130,7 @@ I think I like artists like TSHA and Sylvan Esso for the same reason I like Kraf
 
 ## That's all
 
-Liked the article? This topic runs deep—these songs never get old, and this history felt worth sharing. Each band, each member mentioned here could fill a full article on their own. Especially the YMO members, who have amazing solo careers. Feel free to dig around on the web, or leave a comment saying what you liked most and what you'd want to read more about. There's plenty more to write on this subject.
+Liked the article? This topic runs deep—these songs never get old, and this history felt worth sharing. Each band, each member mentioned here could fill a full article on their own. Especially the YMO members, who have amazing solo careers. Feel free to dig around on the web, or leave a comment saying what you liked most, recommending me other artists and what you'd want to read more about. There's plenty more to write on this subject.
 
 Thirty-five years after the atomic attack on Japan, here's YMO making the Black community in the US dance. A symbol of union and happiness despite all the losses of war—cultural differences broken down by the power of good music.
 
