@@ -1,5 +1,5 @@
 <p align="middle">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Angular_gradient_logo.png/500px-Angular_gradient_logo.png" align="middle" title="Angular" alt="Angular logo" width="120px">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Angular_gradient_logo.png/500px-Angular_gradient_logo.png" align="middle" title="Angular" alt="Angular logo" width="280">
 </p>
 
 Angular Signals are stable now, signal-based inputs and outputs are here, and zoneless mode finally feels real.

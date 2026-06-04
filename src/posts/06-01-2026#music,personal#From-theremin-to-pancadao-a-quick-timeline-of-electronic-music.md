@@ -26,7 +26,7 @@ For anyone who has never seen it, watch this quickly:
 
 The sound feels like an old science fiction soundtrack, because that is exactly what it became later. But before becoming a movie cliche, it was a real discovery: the human body could talk to an electromagnetic field and sound could come out of it.
 
-## 1970 - Ruckzuck and Germany becoming a laboratory
+## 1970 - Ruckzuck and Germany youth in the post-war
 
 Cut to Germany in the late 60s and early 70s. The situation in post-war Germany was awful, and the younger generation was looking for new trends and a new identity. Rock was there, of course, but there was also a group of people trying to escape from copying American blues and create something else. Something more repetitive, colder, more urban, more industrial. People usually call this umbrella krautrock, and inside this movement, Kraftwerk appears.
 
@@ -61,7 +61,7 @@ The rail becomes sequence. The locomotive becomes beat. The trip becomes loop.
 <p align="middle">
   <div class="blog-audio-player" data-title="Kraftwerk — Trans-Europe Express" data-src="/assets/blog/audio/trans-europe-express.mp3"></div>
 <br>
-  <small>Kraftwerk — Trans-Europe Express.</small>
+  <small>Listen in the first seconds the train beat</small>
 </p>
 
 And here there is a beautiful detail for Brazilian music history: the beat of today's funk carioca has an ancestry that passes through this imagination of rails, engines and machines.
@@ -95,19 +95,19 @@ It was the TR-808 appearing as a body. Not as a technical detail, but as a new w
 </p>
 
 
-## What I find most beautiful about this story
+## Extras
 
-Electronic music is not born in just one place. It is kind of like a train: it stops at stations, picks people up, loses baggage, changes language.
+You cannot tell this story without **Brian Eno** and **Gary Numan**. Eno took the synthesizer out of the lab and into art rock, then production and ambient music, opening the door for machines to sound like mood, not just gimmick. Numan did something else: cold, android pop that actually charted, and suddenly the radio was full of synth. Together they helped drag electronic music from a nerd niche into disco floors and mainstream pop, years before the club took over.
 
-Theremin is born in the laboratory. Kraftwerk transforms industry into cold poetry. YMO transforms technology into smart pop. Sakamoto takes the 808 to a territory that DJs understood immediately. Afrika Bambaataa takes Kraftwerk and throws it into the street. Miami Bass raises the bass. Rio takes all of that and says: ok, now let me handle it.
+**Kraftwerk** and **YMO** were not a single family tree. The contact points were few, but real: they respected each other, crossed paths in interviews and press, and showed up at each other's concerts when tours lined up, especially when Kraftwerk played Japan and YMO was watching.
 
-And then something is born that nobody in Europe, Russia or Japan could have planned.
-
-The pancadão.
+The rest of the thread still holds: Theremin in the laboratory, Kraftwerk as cold poetry, YMO as smart pop, the 808 in DJs' hands, Afrika Bambaataa on the street, Miami Bass, and making Rio more poverty classes dance with the Carioca Funk,
 
 ## And then today happens
 
-Here is where my view gets pessimistic. A lot of mainstream electronic music today feels less like music culture and more like a consumption machine. I went to XXXExperience in 2022, and the feeling I had was bad: too much drug excess, too many repeated tracks from the same USB-stick logic, very few artists actually doing something great. Sometimes the mainstream festival circuit feels like a market built around people consuming drugs while a predictable soundtrack keeps the machine running.
+Here is where my view gets pessimistic. A lot of mainstream electronic music today feels less like music culture and more like a consumption machine. I went to XXXExperience rave-party in 2022, thinking that would be an experience to watch the electronic new tendencies. And I just saw drug excess, too many repeated tracks from the same USB-stick logic, very few artists actually doing something great. Sometimes the mainstream festival circuit feels like a market built around people consuming drugs while a predictable soundtrack keeps the machine running.
+
+Funny detail: my friends were waiting for Timmy Trumpet, this guy who supposedly plays trumpet on his tracks. Guess what—the trumpet was pure theater. Not a single damn microphone anywhere near the instrument.
 
 
 Real electronic music still exists, but you need to dig for it. TSHA, for example, makes electronic/house music with taste, space and feeling. "Demba", with Trio Da Kali, has that rare thing of sounding modern without becoming empty. Future bass, when it moves away from the aggressive dubstep formula, can also be much more melodic and emotional. In Brazil, eceologyk is a very good producer, including trap. And Sylvan Esso are among my favorites because they keep things minimal, physical and alive.
