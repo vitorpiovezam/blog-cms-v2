@@ -46,9 +46,17 @@ When I arrived in the island, I imediatelly started my journey to Dois Rios.
 <br>
 
 <p align="middle">
-  <a href="https://www.strava.com/activities/4799661287" target="_blank">
-    <img src="https://strava-embeds.com/activity/4799661287" alt="Strava: Stage 1 — Vila do Abraão to Dois Rios" style="max-width:590px;width:100%;"/>
-  </a>
+  <iframe
+    src="https://strava-embeds.com/activity/4799661287"
+    title="Strava: Stage 1 — Vila do Abraão to Dois Rios"
+    width="590"
+    height="405"
+    style="max-width:100%;width:min(590px,100%);height:405px;border:0;border-radius:6px;"
+    loading="lazy"
+    scrolling="no"
+  ></iframe>
+  <br>
+  <small><a href="https://www.strava.com/activities/4799661287" target="_blank" rel="noopener">View on Strava</a></small>
 </p>
 Climbing the 780 meters of altitude on the first trail, I started to sweat too much, due to the 15kg backpack I carried on my back, containing all the camping material, some food and 4l of water.
 <br>
@@ -130,9 +138,17 @@ I spend a lot of energy climbing those rocks.
 The GPS tracking shows the place I losted the trail.
 <br>
 <p align="middle">
-  <a href="https://www.strava.com/activities/4799659624" target="_blank">
-    <img src="https://strava-embeds.com/activity/4799659624" alt="Strava: Stage 2 — GPS tracking where I got lost" style="max-width:590px;width:100%;"/>
-  </a>
+  <iframe
+    src="https://strava-embeds.com/activity/4799659624"
+    title="Strava: Stage 2 — Dois Rios to Parnaioca (GPS tracking where I got lost)"
+    width="590"
+    height="405"
+    style="max-width:100%;width:min(590px,100%);height:405px;border:0;border-radius:6px;"
+    loading="lazy"
+    scrolling="no"
+  ></iframe>
+  <br>
+  <small><a href="https://www.strava.com/activities/4799659624" target="_blank" rel="noopener">View on Strava</a></small>
 </p>
 
 ## Stage 3, the return
