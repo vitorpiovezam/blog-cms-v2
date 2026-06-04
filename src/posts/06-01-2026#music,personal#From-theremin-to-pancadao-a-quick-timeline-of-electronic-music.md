@@ -110,7 +110,7 @@ Here is where my view gets pessimistic. A lot of mainstream electronic music tod
 Funny detail: my friends were waiting for Timmy Trumpet, this guy who supposedly plays trumpet on his tracks. Guess what—the trumpet was pure theater. Not a single damn microphone anywhere near the instrument.
 
 
-Real electronic music still exists, but you need to dig for it. TSHA, for example, makes electronic/house music with taste, space and feeling. "Demba", with Trio Da Kali, has that rare thing of sounding modern without becoming empty. Future bass, when it moves away from the aggressive dubstep formula, can also be much more melodic and emotional. In Brazil, eceologyk is a very good producer, including trap. And Sylvan Esso are among my favorites because they keep things minimal, physical and alive.
+Real electronic music still exists, but you need to dig for it. TSHA, for example, makes electronic/house music with taste, space and feeling. "Demba", with Trio Da Kali, has that rare thing of sounding modern without becoming empty. There was also a movement called Future bass, that moves away from the aggressive dubstep formula, much more melodic and emotional. In Brazil, Ecologyk is a very good producer, that makes trap music also. And Sylvan Esso are among my favorites because they keep things minimal, physical and alive.
 
 I think I like artists like TSHA and Sylvan Esso for the same reason I like Kraftwerk: they understand minimalism, and they still feel like people actually performing music. Not just a USB stick pretending to be a concert.
 
@@ -122,11 +122,6 @@ I think I like artists like TSHA and Sylvan Esso for the same reason I like Kraf
   <small>Ryuichi Sakamoto - Riot in Lagos. An absurd bridge between the 808, electro and the future.</small>
 </p>
 
-<p align="middle">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/OS9fluEaqrY" title="Sylvan Esso - Echo Party" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br>
-  <small>Sylvan Esso - Echo Party. Minimal, alive, and much closer to what I still search for in electronic music.</small>
-</p>
 
 <p align="middle">
   <div class="blog-audio-player" data-title="TSHA — Demba (feat. Trio Da Kali)" data-src="/assets/blog/audio/tsha-demba.mp3"></div>
